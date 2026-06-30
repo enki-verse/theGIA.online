@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Great I Am (GIA) — A magical, sexual, sensual art camp. We work consciously with the erotic charge as life-force, embodiment, and creative power.">
+    <title>THE GREAT I AM • GIA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@300;400;500&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        :root {
+            --gold: #c9a227;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .premium-gradient {
+            background: linear-gradient(145deg, #0a0a0a 0%, #111111 100%);
+        }
+
+        .section-header {
+            font-size: 2.75rem;
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+        }
+
+        .value-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.2s ease;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #c9a227;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+
+        .gold-text {
+            color: #c9a227;
+        }
+
+        .luxury-border {
+            border-color: #27251f;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.65), rgba(10, 10, 10, 0.75)), url('hero-performance.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            background-attachment: fixed;
+        }
+
+        .premium-shadow {
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+        }
+
+        .magic-text {
+            background: linear-gradient(90deg, #c9a227, #e8d48b, #c9a227);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .value-icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            background: #1f1c17;
+            color: #c9a227;
+            font-size: 1.35rem;
+        }
+
+        .elegant-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #3f3a30, transparent);
+        }
+
+        .gallery-img {
+            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                        box-shadow 0.3s ease;
+            object-fit: cover;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 30px 70px -15px rgb(0 0 0 / 0.5);
+        }
+
+        .form-input {
+            transition: all 0.2s ease;
+        }
+        
+        .form-input:focus {
+            border-color: #c9a227;
+            box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.1);
+            outline: none;
+        }
+
+        .nav-scrolled {
+            background-color: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-zinc-200 overflow-x-hidden">
+    <!-- NAV -->
+    <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 rounded-full border border-[#c9a227]/60 flex items-center justify-center">
+                        <span class="text-[#c9a227] text-xl font-bold tracking-tighter">GIA</span>
+                    </div>
+                    <div>
+                        <div class="font-semibold tracking-[3px] text-sm">THE GREAT I AM</div>
+                        <div class="text-[10px] text-zinc-500 -mt-1">EST 2024</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-x-10 text-sm font-medium tracking-wider">
+                    <a href="#about" class="nav-link text-zinc-300 hover:text-white">About</a>
+                    <a href="#values" class="nav-link text-zinc-300 hover:text-white">Values</a>
+                    <a href="#distinct" class="nav-link text-zinc-300 hover:text-white">What Makes Us</a>
+                    <a href="#join" class="nav-link text-zinc-300 hover:text-white">Join</a>
+                </div>
+
+                <div class="flex items-center gap-x-4">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/thegreatiam.gia" target="_blank" 
+                       class="flex items-center gap-x-2 text-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/5 transition-colors">
+                        <i class="fab fa-instagram text-lg"></i>
+                        <span class="hidden sm:inline text-xs tracking-widest">INSTAGRAM</span>
+                    </a>
+                    
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-btn"
+                            class="md:hidden w-10 h-10 flex items-center justify-center text-zinc-400 hover:text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg min-h-[100dvh] flex items-center pt-16 relative">
+        <div class="max-w-5xl mx-auto px-8 text-center relative z-10">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8">
+                <div class="w-2 h-2 bg-[#c9a227] rounded-full animate-pulse"></div>
+                <span class="text-xs tracking-[3px] text-zinc-400 font-medium">PERTH • AUSTRALIA</span>
+            </div>
+            
+            <h1 class="text-[92px] md:text-[120px] leading-[0.88] font-bold tracking-tighter mb-4">
+                THE GREAT<br>I AM
+            </h1>
+            
+            <p class="max-w-md mx-auto text-2xl md:text-3xl text-zinc-300 tracking-tight mb-10">
+                A magical, sexual, sensual<br>art camp.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#join" 
+                   class="group inline-flex items-center justify-center gap-x-3 bg-[#c9a227] hover:bg-[#d4af37] active:bg-[#b38b1f] transition-all text-black font-semibold px-10 py-4 rounded-2xl text-base tracking-wider">
+                    JOIN THE CIRCLE
+                    <i class="fas fa-arrow-right group-hover:translate-x-0.5 transition-transform"></i>
+                </a>
+                
+                <a href="#values" 
+                   class="inline-flex items-center justify-center gap-x-3 border border-white/30 hover:bg-white/5 transition-all px-8 py-4 rounded-2xl text-base tracking-wider">
+                    OUR VALUES
+                </a>
+            </div>
+            
+            <div class="mt-16 flex justify-center">
+                <div class="flex flex-col items-center gap-y-1 text-xs tracking-[2px] text-zinc-500">
+                    <span>SCROLL TO BEGIN</span>
+                    <i class="fas fa-chevron-down text-sm animate-bounce"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Subtle bottom gradient -->
+        <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-4xl mx-auto px-8 pt-20 pb-16">
+        <div class="text-center mb-12">
+            <div class="uppercase text-[#c9a227] text-xs tracking-[4px] mb-3">WHO WE ARE</div>
+            <h2 class="section-header tracking-tighter">We are becoming<br>gods — playfully.</h2>
+        </div>
+        
+        <div class="prose prose-invert max-w-3xl mx-auto text-[17px] leading-relaxed text-zinc-300">
+            <p class="mb-6">The Great I Am is a magical, sexual, sensual art camp. This is our honest starting point.</p>
+            
+            <p class="mb-6">At the centre of everything we do is the erotic charge — the life-force at the base of existence. We recognise this as a magical force and our birthright. We do not look away from it. We work with it consciously and creatively.</p>
+            
+            <p>We bring the childlike freedom to step into our creative selves and our full power. We are becoming individuals who can change what is real around us, playfully, with the boundary-making powers of an adult. The body is the portal. Embodiment is our method of manifestation.</p>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section id="values" class="bg-[#111111] py-20 border-y border-white/10">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-14">
+                <div class="uppercase text-[#c9a227] text-xs tracking-[4px] mb-3">OUR FOUNDATION</div>
+                <h2 class="section-header tracking-tighter">Our unique values</h2>
+                <p class="mt-4 max-w-md mx-auto text-zinc-400">These principles guide how we gather, create, and transform together.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Value 1 -->
+                <div class="value-card bg-[#1a1814] border border-white/10 rounded-3xl p-8 group">
+                    <div class="value-icon mb-6">
+                        <i class="fas fa-fire-flame-curved"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl tracking-tight mb-3">The Erotic Charge</h3>
+                    <p class="text-zinc-400 leading-relaxed">We recognise the erotic as the life-force at the base of existence and the universe. We work with it consciously and creatively as our birthright.</p>
+                </div>
+                
+                <!-- Value 2 -->
+                <div class="value-card bg-[#1a1814] border border-white/10 rounded-3xl p-8 group">
+                    <div class="value-icon mb-6">
+                        <i class="fas fa-person-walking"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl tracking-tight mb-3">The Body as Portal</h3>
+                    <p class="text-zinc-400 leading-relaxed">Movement, costume, dance, portraiture and performance are how we channel. Embodiment is our method of manifestation. When we dress, move, paint and are painted, we tune ourselves and make things real.</p>
+                </div>
+                
+                <!-- Value 3 -->
+                <div class="value-card bg-[#1a1814] border border-white/10 rounded-3xl p-8 group">
+                    <div class="value-icon mb-6">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl tracking-tight mb-3">Childlike Freedom, Adult Power</h3>
+                    <p class="text-zinc-400 leading-relaxed">We bring the childlike freedom to step into our creative selves — into our full power and magic. We change what is real around us, playfully, with the boundary-making powers of an adult.</p>
+                </div>
+                
+                <!-- Value 4 -->
+                <div class="value-card bg-[#1a1814] border border-white/10 rounded-3xl p-8 group">
+                    <div class="value-icon mb-6">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl tracking-tight mb-3">Flow State</h3>
+                    <p class="text-zinc-400 leading-relaxed">We live in the now and in the flow state. We use improv and intuitive movement. We allow the moment to be there rather than imposing on it. The present is always generative.</p>
+                </div>
+                
+                <!-- Value 5 -->
+                <div class="value-card bg-[#1a1814] border border-white/10 rounded-3xl p-8 group">
+                    <div class="value-icon mb-6">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl tracking-tight mb-3">Comedy &amp; Divinity</h3>
+                    <p class="text-zinc-400 leading-relaxed">We embrace comedy as essential — a way of not taking ourselves too seriously — while truly believing we are becoming gods. These two things live together in us without contradiction.</p>
+                </div>
+                
+                <!-- Value 6 -->
+                <div class="value-card bg-[#1a1814] border border-white/10 rounded-3xl p-8 group">
+                    <div class="value-icon mb-6">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl tracking-tight mb-3">The Art of Becoming</h3>
+                    <p class="text-zinc-400 leading-relaxed">We make costumes. We tune ourselves to become magic and to channel. We make up stories and become characters. Becoming is real.</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 grid md:grid-cols-2 gap-6">
+                <!-- Value 7 -->
+                <div class="value-card bg-[#1a1814] border border-white/10 rounded-3xl p-8 group">
+                    <div class="value-icon mb-6">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl tracking-tight mb-3">Beauty as Environment</h3>
+                    <p class="text-zinc-400 leading-relaxed">Beauty matters. The paintings on the walls, the costumes, the quality of what we make — this is not decoration. It is the environment in which transformation becomes possible.</p>
+                </div>
+                
+                <!-- Value 8 -->
+                <div class="value-card bg-[#1a1814] border border-white/10 rounded-3xl p-8 group">
+                    <div class="value-icon mb-6">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="font-semibold text-2xl tracking-tight mb-3">No Spectators</h3>
+                    <p class="text-zinc-400 leading-relaxed">We collapse the distance between performer and audience. There are no spectators in GIA. If you are in the room, you are in it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT MAKES GIA DISTINCT -->
+    <section id="distinct" class="max-w-4xl mx-auto px-8 py-20">
+        <div class="text-center mb-12">
+            <div class="uppercase text-[#c9a227] text-xs tracking-[4px] mb-3">THE GIA ESSENCE</div>
+            <h2 class="section-header tracking-tighter">What makes GIA, GIA</h2>
+        </div>
+        
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-[#111111] border border-white/10 rounded-3xl p-10 md:p-14">
+                <div class="prose prose-invert text-[17px] leading-relaxed text-zinc-300">
+                    <p class="mb-6">The values above could describe many good groups. What makes us distinct is the particular combination: we are sexual and sensual and we name it. We are magical and we mean it. We are comedic and we use it as a portal. We are artists and the art is always personal.</p>
+                    
+                    <p class="mb-8">Every tool is available — performance, painting, costume, incantation, improv, ceremony, gathering.</p>
+                    
+                    <div class="elegant-divider my-8"></div>
+                    
+                    <p class="italic text-xl text-zinc-200">"The paintings are a good image of us. Full of life-force and movement. Sensual and energetic. Multiple beings in interaction with one another and with meaningful landscapes of mind and world. Always already in the middle of a journey."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY / VISUAL ESSENCE -->
+    <section class="bg-[#111111] py-16 border-y border-white/10">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
+                <div>
+                    <div class="uppercase text-[#c9a227] text-xs tracking-[4px]">THE WORK</div>
+                    <h3 class="text-4xl tracking-tighter font-semibold mt-1">Embodiment in action</h3>
+                </div>
+                <a href="https://www.instagram.com/thegreatiam.gia" target="_blank" 
+                   class="mt-4 md:mt-0 inline-flex items-center text-sm text-[#c9a227] hover:text-[#d4af37] group">
+                    SEE MORE ON INSTAGRAM 
+                    <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Image 1: Performance -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[16/10] bg-zinc-950">
+                    <img src="hero-performance.jpg" alt="Theatrical performance silhouette - sensual artistic dance" 
+                         class="gallery-img w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70"></div>
+                    <div class="absolute bottom-0 left-0 p-7">
+                        <div class="text-xs tracking-widest text-[#c9a227] mb-1">PERFORMANCE</div>
+                        <div class="font-medium text-2xl tracking-tight">The body as portal</div>
+                    </div>
+                </div>
+                
+                <!-- Image 2: Costumes -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[16/10] bg-zinc-950">
+                    <img src="costumes-carnival.jpg" alt="Elaborate artistic costumes and masks - becoming characters" 
+                         class="gallery-img w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/70"></div>
+                    <div class="absolute bottom-0 left-0 p-7">
+                        <div class="text-xs tracking-widest text-[#c9a227] mb-1">BECOMING</div>
+                        <div class="font-medium text-2xl tracking-tight">We make costumes.<br>We become magic.</div>
+                    </div>
+                </div>
+                
+                <!-- Image 3: Placeholder for paintings / embodiment -->
+                <div class="group relative overflow-hidden rounded-3xl aspect-[16/10] bg-zinc-950">
+                    <img src="https://picsum.photos/id/1015/1200/800" alt="Artistic sensual embodiment and movement" 
+                         class="gallery-img w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70"></div>
+                    <div class="absolute bottom-0 left-0 p-7">
+                        <div class="text-xs tracking-widest text-[#c9a227] mb-1">PAINTING &amp; PORTRAITURE</div>
+                        <div class="font-medium text-2xl tracking-tight">Full of life-force.<br>Sensual and energetic.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADDITIONAL VALUES / CONTAINER -->
+    <section class="max-w-5xl mx-auto px-8 py-20">
+        <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+            <div>
+                <h4 class="font-semibold tracking-tight text-2xl mb-6">The container we hold</h4>
+                <div class="space-y-5 text-zinc-300">
+                    <div class="flex gap-4">
+                        <i class="fas fa-share-alt mt-1.5 text-[#c9a227]"></i>
+                        <p>We distribute responsibility and power as widely as possible. Everyone here is a potential leader — the one who initiates.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-handshake mt-1.5 text-[#c9a227]"></i>
+                        <p>We care for each other with genuine loyalty and show up when it counts.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-shield-alt mt-1.5 text-[#c9a227]"></i>
+                        <p>We create an atmosphere that is safe enough for vulnerability, with room for wildness to emerge as we drop in.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-semibold tracking-tight text-2xl mb-6">We are proactive</h4>
+                <p class="text-zinc-300 leading-relaxed">We make things happen. We don’t wait for permission. We are artists whose work is not a hobby — it is central to who we are and what we bring to the world.</p>
+                
+                <div class="mt-8 pt-8 border-t border-white/10 text-sm text-zinc-400">
+                    This is the land of plenty. It isn’t a physical space.<br>
+                    It is a mindset.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN / NEWSLETTER -->
+    <section id="join" class="bg-[#111111] border-t border-white/10 py-20">
+        <div class="max-w-xl mx-auto px-8 text-center">
+            <div class="mb-8">
+                <div class="inline-block px-5 py-1.5 text-xs tracking-[3px] border border-[#c9a227]/40 text-[#c9a227] rounded-full mb-4">THE CIRCLE</div>
+                <h2 class="section-header tracking-tighter">Join the journey</h2>
+                <p class="mt-4 text-lg text-zinc-400">Be the first to hear about events, workshops, performances and gatherings throughout the year.</p>
+            </div>
+            
+            <!-- Signup Form -->
+            <form id="signup-form" class="mt-8">
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <div class="flex-1">
+                        <input type="email" id="email" required 
+                               class="form-input w-full bg-[#1a1814] border border-white/20 focus:border-[#c9a227] text-white placeholder:text-zinc-500 px-6 py-4 rounded-2xl text-lg"
+                               placeholder="your@email.com">
+                    </div>
+                    <button type="submit"
+                            class="bg-[#c9a227] hover:bg-[#d4af37] active:bg-[#b38b1f] transition-all text-black font-semibold px-10 py-4 rounded-2xl text-base tracking-wider whitespace-nowrap">
+                        JOIN THE CIRCLE
+                    </button>
+                </div>
+                
+                <div class="mt-4 flex items-center justify-center gap-x-2 text-xs text-zinc-500">
+                    <i class="fas fa-lock text-[10px]"></i>
+                    <span>We respect your inbox. No spam, ever.</span>
+                </div>
+            </form>
+            
+            <!-- Success message (hidden by default) -->
+            <div id="success-message" class="hidden mt-8 p-8 bg-[#1a1814] border border-[#c9a227]/30 rounded-3xl">
+                <div class="flex justify-center mb-4">
+                    <div class="w-14 h-14 rounded-full bg-[#c9a227]/10 flex items-center justify-center">
+                        <i class="fas fa-check text-[#c9a227] text-3xl"></i>
+                    </div>
+                </div>
+                <h3 class="text-2xl tracking-tight font-semibold">Welcome to the circle.</h3>
+                <p class="text-zinc-400 mt-2">You’ll be the first to know about upcoming events, workshops and performances. We’re excited to have you with us.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 py-10">
+        <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row md:items-center justify-between gap-y-4 text-sm text-zinc-500">
+            <div>
+                © THE GREAT I AM <span class="font-mono">2026</span>. All rights reserved.
+            </div>
+            <div class="flex items-center gap-x-6">
+                <a href="https://www.instagram.com/thegreatiam.gia" target="_blank" class="hover:text-white transition-colors">Instagram</a>
+                <span class="text-white/20">•</span>
+                <span>thegia.online</span>
+            </div>
+            <div class="text-xs">
+                A space for erotic charge, creative power &amp; becoming.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent-gold', '#c9a227');
+        }
+        
+        // Navbar scroll effect
+        function initNavbar() {
+            const nav = document.getElementById('nav');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('nav-scrolled', 'shadow-xl');
+                } else {
+                    nav.classList.remove('nav-scrolled', 'shadow-xl');
+                }
+            });
+        }
+        
+        // Mobile menu
+        function initMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            
+            btn.addEventListener('click', () => {
+                const navLinks = document.createElement('div');
+                navLinks.className = `fixed inset-0 bg-[#0a0a0a] z-[60] flex flex-col p-8 pt-24 text-2xl`;
+                navLinks.innerHTML = `
+                    <div class="flex flex-col gap-y-6">
+                        <a href="#about" class="py-2">About</a>
+                        <a href="#values" class="py-2">Values</a>
+                        <a href="#distinct" class="py-2">What Makes Us</a>
+                        <a href="#join" class="py-2">Join the Circle</a>
+                        
+                        <div class="pt-8 border-t border-white/10">
+                            <a href="https://www.instagram.com/thegreatiam.gia" target="_blank" 
+                               class="flex items-center gap-x-3 text-base">
+                                <i class="fab fa-instagram"></i> 
+                                <span>Follow on Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                `;
+                
+                document.body.appendChild(navLinks);
+                
+                // Close on link click
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.remove();
+                    });
+                });
+                
+                // Close on outside click or escape
+                navLinks.addEventListener('click', (e) => {
+                    if (e.target === navLinks) navLinks.remove();
+                });
+                
+                document.addEventListener('keydown', function handler(e) {
+                    if (e.key === 'Escape') {
+                        navLinks.remove();
+                        document.removeEventListener('keydown', handler);
+                    }
+                }, { once: true });
+            });
+        }
+        
+        // Smooth scroll for anchor links
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        const navHeight = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.scrollY - navHeight;
+                        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+        
+        // Signup form handling
+        function initSignupForm() {
+            const form = document.getElementById('signup-form');
+            const successMsg = document.getElementById('success-message');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const emailInput = document.getElementById('email');
+                const email = emailInput.value.trim();
+                
+                if (!email) return;
+                
+                // Simulate processing
+                const btn = form.querySelector('button');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = `<span class="flex items-center gap-x-2"><i class="fas fa-spinner fa-spin"></i> JOINING...</span>`;
+                btn.disabled = true;
+                
+                setTimeout(() => {
+                    // Hide form
+                    form.style.display = 'none';
+                    
+                    // Show success
+                    successMsg.classList.remove('hidden');
+                    successMsg.classList.add('flex', 'flex-col', 'items-center');
+                    
+                    // Optional: You can add confetti here if wanted
+                    
+                    // In production: Replace this with actual Mailchimp or Netlify form submission
+                    console.log('%c[INFO] Form submitted for:', 'color:#666', email);
+                    
+                    // Reset button state (in case user goes back)
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }, 850);
+            });
+        }
+        
+        // Keyboard accessibility hint
+        function initKeyboardHints() {
+            // Allow pressing "/" to focus email field when on join section
+            document.addEventListener('keydown', (e) => {
+                if (e.key === '/' && document.activeElement.tagName === 'BODY') {
+                    const joinSection = document.getElementById('join');
+                    const emailField = document.getElementById('email');
+                    
+                    if (joinSection && emailField) {
+                        e.preventDefault();
+                        joinSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        setTimeout(() => emailField.focus(), 600);
+                    }
+                }
+            });
+        }
+        
+        // Main initialization
+        function initializeWebsite() {
+            initializeTailwind();
+            initNavbar();
+            initMobileMenu();
+            initSmoothScroll();
+            initSignupForm();
+            initKeyboardHints();
+            
+            // Easter egg: clicking the GIA logo scrolls to top
+            const logo = document.querySelector('.fa-magic, .rounded-full.border');
+            if (logo) {
+                logo.style.cursor = 'pointer';
+                logo.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            // Console message for developers
+            console.log('%c[The Great I Am] Premium single-page site ready. Connect Mailchimp form when deploying.', 'color:#555');
+        }
+        
+        // Boot
+        window.onload = initializeWebsite;
+    </script>
+</body>
+</html>
